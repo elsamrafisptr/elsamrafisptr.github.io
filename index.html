@@ -11,7 +11,7 @@
 	
 	
 	<!-- Navbar Section Start -->
-	<header class="bg-transparent absolute top-3 left-0 w-full flex items-center z-10">
+	<header class="bg-[#252525] top-0 left-0 w-full flex items-center z-10 pt-4 pb-4 fixed opacity-60">
 		<div class="container">
 			<div class="flex items-center justify-between relative">
 				<div class="px-6">
@@ -30,23 +30,25 @@
 	<!-- Navbar Section End -->
 	
 	
-	<!-- Hero Section Start -->
-	<section id="home" class="pt-12 pb-6">
+	<!-- Hero Section Start kurang muted -->
+	<section id="home" class="h-screen">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<!-- The video -->
-				<div class="bg-slate-1000 relative overflow-hideen">
-					<video autoplay muted loop id="myVideo" class="object-cover opacity-40">
+				<div class=" flex relative overflow-hideen h-screen">
+					<video loop id="myVideo" class="object-cover opacity-40 h-screen">
 						<source src="src/video-bg.mp4" type="video/mp4">
 					</video>
-					<div class="w-full px-6 mb-6 absolute top-3">
+					<div class="w-full px-6 mb-6 absolute top-16">
 						<h1 class="text-white text-4xl font-bold block">Camat Datang, </h1>
 						<h1 id="change-txt" class="text-white text-4xl font-bold block mb-3"> Sayanggcuuu</h1>
 						<h2 class="text-white text-xs font-normal">Nanti di scroll aja yaaaa sampee bawahhh
 						pelann pelannn ajaa gausaa buruu buruu :D
 						<br>camattt menikmatiiiiii...!!! :D</h2>
 					</div>
-					<button class="bg-gradient-to-b from-rose-600 to-pink-600 self-end px-5 py-2.5 rounded-full absolute right-0 left-0 bottom-6 mx-auto w-64"> <span class="text-white font-semibold text-center">Nonton Videonyaa Yuuu</span></button>
+					<div class="absolute bottom-2.5 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+						<button class="bg-gradient-to-b from-rose-600 to-pink-600 self-end px-5 h-10 rounded-full "> <span class="text-white text-[13px] font-semibold text-center">Nontonn Yuuu</span></button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -55,18 +57,20 @@
 	
 	
 	<!-- Gallery Section Start -->
-	<section id="gallery" class="pt-6 pb-6">
+	<section id="gallery" class="pt-12 pb-12 h-screen">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<div class="w-full px-6 mb-6">
 					<h1 class="text-white text-4xl text-center pt-10">Gallery</h1>
-					<h2 class="text-white text-xs text-center pt-4">blablabalabala lorem ipsum dolor si amet</h2>
+					<h2 class="text-white text-xs text-center pt-4">ini nih kumpulan album foto kitaaa, sebenernya tinggal liat di gdrivee sii tpi klooo di sinii kann lebihh lucuuuuu</h2>
 				</div>
 			</div>
 			<div class="flex flex-row">
 				<div class="w-full px-6 mb-6 pt-12">
 					<div class="w-[174px] h-[327px] bg-white rounded-2xl inline-block">
-						<div class="w-full h-[174px] bg-sky-500 z-10 rounded-t-2xl"></div>
+						<div class="w-full h-[174px] bg-sky-500 z-10 rounded-t-2xl">
+							<img src="src/card-anniv.jpg" alt="gemecinnnnn" class="w-full h-full object-cover rounded-t-2xl">
+						</div>
 						<div class="px-2 pt-2 text-black font-semibold"><span class="text-pink-600 font-bold">[Jalan]</span> Anniversary yang ke 6 Bulan</div>
 						<div class="px-2 pt-2 text-xs text-slate-700">Mam all you can eat di pvj samaa sayanggcuu dikasihh kuee <3</div>
 					</div>
@@ -84,13 +88,40 @@
 	<!-- Gallery Section End -->
 	
 	<!-- About Us Section Start -->
-	<section id="about-us" class="pt-24 pb-24">
+	<section id="about-us" class="pt-12 pb-12 h-screen">
 		<div class="container">
 			<div class="flex flex-wrap">
+				<div class="w-full px-6 mb-16">
+					<h1 class="text-white text-4xl text-center pt-10">About Us</h1>
+					<h2 class="text-white text-xs text-left pt-4">di sini bakall nyeritainn tentangg kitaaaa, dann jugaa ada profill kitaa masingg masingg buatt  portofolioo webbnyaaa WOWWWWW wkwkkwk</h2>
+					<div class="float-right">
+						<a class="pt-2 text-white text-xs font-semibold underline cursor-pointer hover:text-pink-600">Lihatt ceritaa lengkapp yuu...</a>
+					</div>
+				</div>
+				<div class="w-full px-6 mb-3">
+					<div class="bg-white w-full h-[128px] rounded-2xl flex relative">
+						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
+							<img src="" alt="">
+						</div>
+						<div class="px-2 py-2 font-semibold text-base">
+							Papii Ecammm
+						</div>
+						<div class="absolute right-6 bottom-2">
+							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
+						</div>
+					</div>
+				</div>
 				<div class="w-full px-6 mb-6">
-					<div class="w-full px-6 mb-6">
-						<h1 class="text-white text-4xl text-center pt-10">About Us</h1>
-						<h2 class="text-white text-xs text-center pt-4">blablabalabala lorem ipsum dolor si amet</h2>
+					<div class="bg-white w-full h-[128px] rounded-2xl flex relative">
+						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
+							<img src="" alt="">
+						</div>
+						<div class="px-2 py-2 font-semibold text-base">
+							Istriii Ecammm
+						</div>
+						<div class="absolute right-6 bottom-2">
+							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -99,39 +130,29 @@
 	<!-- About Us Section End -->
 	
 	<!-- Quiz +Footer Section Start -->
-	<section id="quiz" class="pt-24 pb-24">
+	<section id="quiz" class="pt-24 pb-24 h-screen relative">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<div class="w-full px-6 mb-6">
-					<div class="w-full px-6 mb-6">
+					<div class="w-full mb-6">
 						<h1 class="text-white text-4xl text-center pt-10">Games</h1>
 						<h2 class="text-white text-xs text-center pt-4">blablabalabala lorem ipsum dolor si amet</h2>
 					</div>
 					<div >
-						<textarea class="w-full h-[218px] px-6 mb-3 bg-white rounded-2xl placeholder:text-sm placeholder:text-left placeholder:top-1 placeholder:pt-3" placeholder="Cemangat isinya sayanggcuuuu" type="text-area"></textarea>  
+						<textarea class="w-full h-[218px] px-6 mb-3 bg-white rounded-2xl placeholder:text-sm placeholder:text-left placeholder:top-1" placeholder="Cemangat isinya sayanggcuuuu" type="text-area"></textarea>  
 					</div>
 					<div class="float-right">
 						<button class="px-5 py-2.5 bg-gradient-to-b from-rose-600 to-pink-600 rounded-full text-white text-sm font-semibold">Yuu Kirimm</button>
 					</div>
 				</div>
 			</div>
+			<div class="w-full pt-6 pb-12 bg-gradient-to-b from-rose-600 to-pink-600 absolute bottom-0">
+				<h1 class="text-3xl text-white text-center font-bold">Ucapan</h1>
+				<h2 class="text-white text-center pt-4">ucapannn kata katanyaaaa harapan harapan yg ada</h2>
+			</div>
 		</div>
 	</section>
 	<!-- Quiz Section End -->
-
-
-	<!-- Footer Section Start -->
-	<section id="quiz" class="pt-6 pb-12 bg-gradient-to-b from-rose-600 to-pink-600">
-		<div class="container">
-			<div class="flex flex-wrap">
-				<div class="w-full px-6">
-					<h1 class="text-3xl text-white text-center font-bold">Ucapan</h1>
-					<h2 class="text-white text-center pt-4">ucapannn kata katanyaaaa harapan harapan yg ada</h2>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Footer Section End -->
 
 	
 </body>

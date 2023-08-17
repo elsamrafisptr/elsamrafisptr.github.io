@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Untukk Sayanggkuuu Poaiicuuu</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body class="bg-[#1a1a1a]">
 	
 	
 	<!-- Navbar Section Start -->
-	<header class="bg-[#252525] top-0 left-0 w-full flex items-center z-10 pt-4 pb-4 fixed opacity-60">
+	<header class="bg-transparent top-0 left-0 w-full flex items-center z-10 pt-4 pb-4 fixed backdrop-blur-sm drop-shadow-md">
 		<div class="container">
 			<div class="flex items-center justify-between relative">
 				<div class="px-6">
@@ -31,11 +32,11 @@
 	
 	
 	<!-- Hero Section Start kurang muted -->
-	<section id="home" class="h-screen">
+	<section id="home" class="h-full">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<!-- The video -->
-				<div class=" flex relative overflow-hideen h-screen">
+				<div class=" flex relative overflow-hideen h-full">
 					<video loop id="myVideo" class="object-cover opacity-40 h-screen">
 						<source src="src/video-bg.mp4" type="video/mp4">
 					</video>
@@ -46,7 +47,7 @@
 						pelann pelannn ajaa gausaa buruu buruu :D
 						<br>camattt menikmatiiiiii...!!! :D</h2>
 					</div>
-					<div class="absolute bottom-2.5 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+					<div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
 						<button class="bg-gradient-to-b from-rose-600 to-pink-600 self-end px-5 h-10 rounded-full "> <span class="text-white text-[13px] font-semibold text-center">Nontonn Yuuu</span></button>
 					</div>
 				</div>
@@ -57,7 +58,7 @@
 	
 	
 	<!-- Gallery Section Start -->
-	<section id="gallery" class="pt-12 pb-12 h-screen">
+	<section id="gallery" class="pt-12 pb-12 h-full">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<div class="w-full px-6 mb-6">
@@ -65,21 +66,71 @@
 					<h2 class="text-white text-xs text-center pt-4">ini nih kumpulan album foto kitaaa, sebenernya tinggal liat di gdrivee sii tpi klooo di sinii kann lebihh lucuuuuu</h2>
 				</div>
 			</div>
-			<div class="flex flex-row">
-				<div class="w-full px-6 mb-6 pt-12">
-					<div class="w-[174px] h-[327px] bg-white rounded-2xl inline-block">
-						<div class="w-full h-[174px] bg-sky-500 z-10 rounded-t-2xl">
-							<img src="src/card-anniv.jpg" alt="gemecinnnnn" class="w-full h-full object-cover rounded-t-2xl">
+
+			<div class="slider full-bleed">
+				<div class="slidewrapper">
+					<div class="bg-white w-full h-[172px] rounded-2xl flex relative mx-6 my-6">
+						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
+							<img src="" alt="">
 						</div>
-						<div class="px-2 pt-2 text-black font-semibold"><span class="text-pink-600 font-bold">[Jalan]</span> Anniversary yang ke 6 Bulan</div>
-						<div class="px-2 pt-2 text-xs text-slate-700">Mam all you can eat di pvj samaa sayanggcuu dikasihh kuee <3</div>
+						<div class="px-2 py-2 font-semibold text-base">
+							No1
+						</div>
+						<div class="absolute right-6 bottom-2">
+							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
+						</div>
 					</div>
-					<div class="flex justify-center">
-						<div class="w-[20px] h-[13px] rounded-full bg-white mx-1 my-6 inline-block"></div>
-						<div class="w-[13px] h-[13px] rounded-full bg-white mx-1 my-6 inline-block"></div>
-						<div class="w-[13px] h-[13px] rounded-full bg-white mx-1 my-6 inline-block"></div>
-						<div class="w-[13px] h-[13px] rounded-full bg-white mx-1 my-6 inline-block"></div>
-						<div class="w-[13px] h-[13px] rounded-full bg-white mx-1 my-6 inline-block"></div>
+				</div>
+				<div class="slidewrapper">
+					<div class="bg-white w-full h-[172px] rounded-2xl flex relative mx-6 my-6">
+						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
+							<img src="" alt="">
+						</div>
+						<div class="px-2 py-2 font-semibold text-base">
+							no2
+						</div>
+						<div class="absolute right-6 bottom-2">
+							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
+						</div>
+					</div>
+				</div>
+				<div class="slidewrapper">
+					<div class="bg-white w-full h-[172px] rounded-2xl flex relative mx-6 my-6">
+						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
+							<img src="" alt="">
+						</div>
+						<div class="px-2 py-2 font-semibold text-base">
+							no3
+						</div>
+						<div class="absolute right-6 bottom-2">
+							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
+						</div>
+					</div>
+				</div>
+				<div class="slidewrapper">
+					<div class="bg-white w-full h-[172px] rounded-2xl flex relative mx-6 my-6">
+						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
+							<img src="" alt="">
+						</div>
+						<div class="px-2 py-2 font-semibold text-base">
+							No4
+						</div>
+						<div class="absolute right-6 bottom-2">
+							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
+						</div>
+					</div>
+				</div>
+				<div class="slidewrapper">
+					<div class="bg-white w-full h-[172px] rounded-2xl flex relative mx-6 my-6">
+						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
+							<img src="" alt="">
+						</div>
+						<div class="px-2 py-2 font-semibold text-base">
+							No5
+						</div>
+						<div class="absolute right-6 bottom-2">
+							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
+						</div>
 					</div>
 				</div>
 			</div>		
@@ -88,7 +139,7 @@
 	<!-- Gallery Section End -->
 	
 	<!-- About Us Section Start -->
-	<section id="about-us" class="pt-12 pb-12 h-screen">
+	<section id="about-us" class="pt-12 pb-12 h-full">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<div class="w-full px-6 mb-16">
@@ -98,30 +149,22 @@
 						<a class="pt-2 text-white text-xs font-semibold underline cursor-pointer hover:text-pink-600">Lihatt ceritaa lengkapp yuu...</a>
 					</div>
 				</div>
-				<div class="w-full px-6 mb-3">
-					<div class="bg-white w-full h-[128px] rounded-2xl flex relative">
-						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
-							<img src="" alt="">
+				<div class="w-full px-6 mb-3 flex justify-strech">
+					<div class="w-[140px] h-[240px] bg-white rounded-2xl relative mx-6">
+						<img src="" alt="">
+						<div class="absolute z-10 bottom-6 left-2">
+							<div class="font-semibold text-white">Papiii Ecamm</div>
+							<div class="text-xs font-normal text-white">FIF, Telkom University</div>
 						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							Papii Ecammm
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
+						<div class="w-full h-3/4 bg-gradient-to-t from-pink-700 from-10% rounded-2xl absolute bottom-0"></div>
 					</div>
-				</div>
-				<div class="w-full px-6 mb-6">
-					<div class="bg-white w-full h-[128px] rounded-2xl flex relative">
-						<div class="w-[120px] h-full bg-sky-500 rounded-l-2xl">
-							<img src="" alt="">
+					<div class="w-[140px] h-[240px] bg-white rounded-2xl relative mx-6">
+						<img class="bg-sky-500 w-full h-full rounded-2xl" src="" alt="">
+						<div class="absolute z-10 bottom-6 left-2">
+							<div class="font-semibold text-white">Bundaa Poaii</div>
+							<div class="text-xs font-normal text-white">FIK, Telkom University</div>
 						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							Istriii Ecammm
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
+						<div class="w-full h-3/4 bg-gradient-to-t from-pink-700 from-10% rounded-2xl absolute bottom-0"></div>
 					</div>
 				</div>
 			</div>
@@ -130,7 +173,7 @@
 	<!-- About Us Section End -->
 	
 	<!-- Quiz +Footer Section Start -->
-	<section id="quiz" class="pt-24 pb-24 h-screen relative">
+	<section id="quiz" class="pt-24 pb-24 h-full relative h-full">
 		<div class="container">
 			<div class="flex flex-wrap">
 				<div class="w-full px-6 mb-6">
@@ -154,6 +197,6 @@
 	</section>
 	<!-- Quiz Section End -->
 
-	
+	<script src="js/script.js"></script>
 </body>
 </html>

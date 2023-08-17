@@ -1,0 +1,70 @@
+:root {
+	--column-size: min(100%, 500px);
+	--slider-size: min(100%, 480px);
+	--slider-border-radius: 2em;
+	--slider-fullbleed-gap: 24px;
+}
+
+.slider {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	
+	width: var(--slider-size);
+	margin: 1em auto;
+	
+	border-radius: var(--slider-border-radius);
+}
+
+/* Hide Scrollbar itself */
+.slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slidewrapper {
+	scroll-snap-align: center;
+
+	/* Size me */
+	flex: 0 0 var(--slider-size);
+	width: var(--slider-size);
+	
+	/* This is needed for the paddings (in the full-bleed variant) to work …*/
+	box-sizing: content-box;
+
+	/* To allow the child .slide to stretch out inside me */
+	display: flex;
+}
+
+
+/* @ref https://www.bram.us/2019/04/09/breaking-elements-out-of-their-containers-in-css-with-full-bleed/ */
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Put border-radius on the individual slides, not the slider-container */
+.slider.full-bleed {
+	border-radius: 0;
+}
+
+/* Add a faux gap between the slidewrappers */
+.slider.full-bleed .slidewrapper {	
+	margin-right: var(--slider-fullbleed-gap);
+}
+
+/* Offset first slidewrapper from the left so that it apppears centered on load */
+.slider.full-bleed .slidewrapper:first-child {
+	padding-left: calc(50vw - (var(--slider-size) / 2));
+}
+
+/* Offset last slidewrapper so that it apppears centered when at the last item */
+/* Note that margin-right won't work …*/
+.slider.full-bleed .slidewrapper:last-child {
+	margin-right: 0;
+	padding-right: calc(50vw - (var(--slider-size) / 2));
+}

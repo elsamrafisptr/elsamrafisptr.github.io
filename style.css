@@ -13,20 +13,21 @@
 	display: flex;
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
-	
+
 	width: var(--slider-size);
 	margin: 1rem;
-	
+
 	border-radius: var(--slider-border-radius);
 }
 
 /* Hide Scrollbar itself */
 .slider {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
+
 .slider::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 .slidewrapper {
@@ -35,7 +36,7 @@
 	/* Size me */
 	flex: 0 0 var(--slider-size);
 	width: var(--slider-size);
-	
+
 	/* This is needed for the paddings (in the full-bleed variant) to work …*/
 	box-sizing: content-box;
 
@@ -46,9 +47,9 @@
 
 /* @ref https://www.bram.us/2019/04/09/breaking-elements-out-of-their-containers-in-css-with-full-bleed/ */
 .full-bleed {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
+	width: 100vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
 
 /* Put border-radius on the individual slides, not the slider-container */
@@ -57,7 +58,7 @@
 }
 
 /* Add a faux gap between the slidewrappers */
-.slider.full-bleed .slidewrapper {	
+.slider.full-bleed .slidewrapper {
 	margin-right: var(--slider-fullbleed-gap);
 }
 
@@ -83,7 +84,7 @@
 
 #slider #line {
 	height: 5px;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0, 0, 0, 0.5);
 	z-index: 1;
 	position: absolute;
 	bottom: 0;
@@ -105,7 +106,7 @@
 	width: 12px;
 	height: 12px;
 	border-radius: 100%;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0, 0, 0, 0.5);
 	margin: 0 0.25em;
 	cursor: pointer;
 }
@@ -117,8 +118,13 @@
 
 @keyframes line {
 
-	0% {width: 0%;}
-	100% {width: 100%;}
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
 
 }
 
@@ -137,20 +143,20 @@
 	bottom: 0;
 	color: white;
 	font-weight: 700;
-    font-size: 2rem;
-	background: -moz-linear-gradient(left,  rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
-	background: -webkit-linear-gradient(left,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
-	background: linear-gradient(to right,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#00ffffff',GradientType=1 );
+	font-size: 2rem;
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfffffff', endColorstr='#00ffffff', GradientType=1);
 }
 
 #slider #forword {
 	left: auto;
 	right: 0;
-	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.75) 100%);
-	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 100%);
-	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.75) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#bfffffff',GradientType=1 );
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 100%);
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#bfffffff', GradientType=1);
 }
 
 #slider:hover #back,
@@ -203,3 +209,31 @@ ul#move li:nth-child(4) {
 ul#move li:nth-child(5) {
 	background: #744674;
 }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+	background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+}
+

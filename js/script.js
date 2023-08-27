@@ -2,11 +2,12 @@
 
 const hamburger = document.querySelector('#hamburger');
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active')
 });
 
-window.onload = function() {
+
+window.onload = function () {
 
     let slider = document.querySelector('#slider');
     let move = document.querySelector('#move');
@@ -42,7 +43,7 @@ window.onload = function() {
 
             moveLi[0].style.marginLeft = '-' + counter * 100 + '%';
             counter++;
-        } 
+        }
 
         if (counter == 1) {
 
@@ -70,19 +71,19 @@ window.onload = function() {
         } else if (counter <= moveLi.length) {
 
             counter = counter - 2;
-            moveLi[0].style.marginLeft = '-' + counter * 100 + '%';   
+            moveLi[0].style.marginLeft = '-' + counter * 100 + '%';
             counter++;
 
             dot[counter].classList.remove('active');
             dot[counter - 1].classList.add('active');
 
-        }  
+        }
 
     }
 
     for (i = 0; i < dot.length; i++) {
 
-        dot[i].addEventListener('click', function(e) {
+        dot[i].addEventListener('click', function (e) {
 
             dot[counter - 1].classList.remove('active');
             counter = e.target.value + 1;
@@ -98,18 +99,41 @@ window.onload = function() {
 
     let autoPlay = setInterval(moveUP, time);
 
-    slider.onmouseover = function() {
+    slider.onmouseover = function () {
 
         autoPlay = clearInterval(autoPlay);
         line.style.animation = '';
 
     }
 
-    slider.onmouseout = function() {
+    slider.onmouseout = function () {
 
         autoPlay = setInterval(moveUP, time);
         line.style.animation = 'line ' + (time / 1000) + 's linear infinite';
 
     }
-  
+
+}
+
+
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }

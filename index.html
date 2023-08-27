@@ -1,387 +1,701 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Untukk Sayanggkuuu Poaiicuuu</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">	
-</head>
-<body class="bg-[#1a1a1a]">
-	
-	
-	<!-- Navbar Section Start -->
-	<header class="bg-transparent top-0 left-0 w-full flex items-center z-10 pt-4 pb-4 fixed backdrop-blur-sm drop-shadow-md">
-		<div class="container">
-			<div class="flex items-center justify-between relative">
-				<div class="px-6">
-					<h1 class="text-white">logo</h1>
-				</div>
-				<div class="flex items-center px-6">
-					<button id="hamburger" name="hamburger" type="button" class="block absolute right-6">
-						<span class="w-[24px] h-[2px] my-1 block bg-white rounded-full"></span>
-						<span class="w-[24px] h-[2px] my-1 block bg-white rounded-full"></span>
-						<span class="w-[24px] h-[2px] my-1 block bg-white rounded-full"></span>
-					</button>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- Navbar Section End -->
-	
-	
-	<!-- Hero Section Start kurang muted -->
-	<section id="home" class="h-full">
-		<div class="container">
-			<div class="flex flex-wrap">
-				<!-- The video -->
-				<div class=" flex relative overflow-hideen h-full">
-					<video autoplay muted loop id="myVideo" class="object-cover opacity-40 h-screen">
-						<source src="src/video-bg.mp4" type="video/mp4">
-					</video>
-					<div class="w-full px-6 mb-6 absolute top-24">
-						<h1 class="text-white text-4xl font-bold block">Camat Datang, </h1>
-						<h1 id="change-txt" class="text-white text-4xl font-bold block mb-3"> Sayanggcuuu</h1>
-						<h2 class="text-white text-xs font-normal">Nanti di scroll aja yaaaa sampee bawahhh
-						pelann pelannn ajaa gausaa buruu buruu :D
-						<br>camattt menikmatiiiiii...!!! :D</h2>
-					</div>
-					<div class="absolute bottom-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-						<button class="bg-gradient-to-b from-rose-600 to-pink-600 self-end px-5 h-10 rounded-full "> <span class="text-white text-[13px] font-semibold text-center">Nontonn Yuuu</span></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Hero Section End -->
-	
-	
-	<!-- Gallery Section Start -->
-	<section id="gallery" class="pt-16 pb-12 h-screen">
-		<div class="container">
-			<div class="flex flex-wrap">
-				<div class="w-full px-6 mb-6">
-					<h1 class="text-white text-4xl text-center pt-10 judul">Gallery</h1>
-					<h2 class="text-white text-xs text-center pt-4">ini kumpulan album foto kitaaa, sebenernya tinggal liat di gdrivee sii tpi klooo di sinii kann lebihh lucuuuuu dan kerenn gaa sii sayanggg wkwkwk</h2>
-				</div>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&display=swap"
+      rel="stylesheet"
+    />
+    <title>Untukk Sayanggkuuu Poaiicuuu</title>
+  </head>
+  <body class="bg-[#1a1a1a]">
+    <audio autoplay loop>
+      <source src="src/music-bg.mp3" type="audio/mpeg" />
+      not working
+    </audio>
 
-			<div class="px-6 pt-12 text-white flex justify-between items-center">
-				<span class="font-semibold">Momen Terbaik di 2022</span>
-				<span class="text-xs underline hover:text-pink-500 cursor-pointer">Lihat Semua</span>
-			</div>
-			<div class="slider full-bleed">
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div>
-							<img src="src/fav-ultah.JPG" alt="" class="w-[144px] h-full rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span class="block">Ulanggg Tahunn Sayanggg</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Rumah Rancaekek</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div>
-							<img src="src/fav-fotstud.jpg" alt="" class="w-[144px] h-full rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span>Foto Studioo Nalaa</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Nala Photo Studio</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div>
-							<img src="src/fav-masker.jpg" alt="" class="w-[144px] h-full rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span>Pake maskerr barengg</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Kos Sayang Dulu</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div>
-							<img src="src/fav-sutei.jpg" alt="" class="w-[144px] h-full rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span>Mamm Sushi di Sushi Tei</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Sushi Tei, TSM</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div class="">
-							<img src="src/fav-racha.jpg" alt="" class="w-[144px] h-[160px] rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span>Jalan - jalan di Trans Studio Mall</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Trans Studio Mall Bandung</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="px-6 pt-12 text-white flex justify-between items-center">
-				<span class="font-semibold">Momen Terbaik di 2023</span>
-				<span class="text-xs underline hover:text-pink-500 cursor-pointer">Lihat Semua</span>
-			</div>
-			<div class="slider full-bleed">
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div>
-							<img src="src/fav-parlor.jpg" alt="" class="w-[144px] h-full rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span class="block">Jalan seharian ke Fogoo & Thee Parlorr</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Fogo & The Parlor</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div>
-							<img src="src/fav-iceskate.jpg" alt="" class="w-[144px] h-full rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span>Mainn Icee Skatingg di PVJ</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Ice Skate, PVJ</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div>
-							<img src="src/fav-tsm.jpg" alt="" class="w-[144px] h-full rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span>Masukk ke Transs Studioo Bandungg</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Transs Studio Mall</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div>
-							<img src="src/fav-anniv.jpg" alt="" class="w-[144px] h-full rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span>Anniversaryy yg ke-6 Bulann samaaa sayangg</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">All you can eat, PVJ</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-				<div class="slidewrapper">
-					<div class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6">
-						<div class="">
-							<img src="src/fav-sambal.jpg" alt="" class="w-[144px] h-[160px] rounded-l-2xl object-cover">
-						</div>
-						<div class="px-2 py-2 font-semibold text-base">
-							<span>Jalan - jalann sebelumm LDR (tukarr kadoo)</span>
-							<div class="flex items-center mt-1">
-								<div class="inline-block w-[20px] h-[20px] mr-1">
-									<svg class="svg-icon" viewBox="0 0 20 20">
-										<path class="fill-pink-600" d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
-									</svg>
-								</div>
-								<span class="inline-block text-xs text-slate-600">Samball Bakarr, Kartika Sari, Tiramisusuu</span>
-							</div>
-						</div>
-						<div class="absolute right-6 bottom-2">
-							<a class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600">Yuu</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="flex justify-center cursor-pointer mt-6">
-				<a href="https://drive.google.com/drive/folders/1PYe5PAAcZkXwYiIFUAzruesDZPBDHYiW?usp=sharing" class="bg-gradient-to-b from-rose-600 to-pink-600 px-5 h-10 rounded-full flex items-center cursor-pointer"><span class="text-white text-[13px] font-semibold text-center cursor-pointer">Lihatt Semuaa Albumm Fotoo Kitaa</span></a>
-			</div>
-		</div>
-	</section>
-	<!-- Gallery Section End -->
-	
-	<!-- About Us Section Start -->
-	<section id="about-us" class="pt-16 pb-12 h-screen">
-		<div class="container">
-			<div class="flex flex-wrap">
-				<div class="w-full px-6 mb-16">
-					<h1 class="text-white text-4xl text-center pt-10 judul">About Us</h1>
-					<div id="slider" class="aspect-video mt-12">
-						<div id="line">
-						</div>
-						<ul id="move">
-							<li><img src="src/about-1.jpg"></li>
-							<li><img src="src/about-2.jpg"></li>
-							<li><img src="src/about-3.jpg"></li>
-							<li><img src="src/about-4.JPG"></li>
-						</ul>
-						<div id="back">
-							<
-						</div>
-						<div id="forword">
-							>
-						</div>
-						<div id="dots"></div>
-					</div>
-					
-					<h2 class="text-white text-xs text-left pt-2">di sini bakall nyeritainn tentangg kitaaaa, dann jugaa ada profill kitaa masingg masingg buatt  portofolioo webbnyaaa WOWWWWW wkwkkwk</h2>
-					<div class="float-right">
-						<a class="pt-2 text-white text-xs font-semibold underline cursor-pointer hover:text-pink-600">Lihatt ceritaa lengkapp yuu...</a>
-					</div>
-				</div>
-				<div class="w-full px-6 mb-3 flex justify-strech">
-					<div class="w-[144px] h-[240px] bg-white rounded-2xl relative mx-6">
-						<img class="w-full h-full rounded-2xl object-cover" src="src/about-ecamm.jpg" alt="">
-						<div class="absolute z-10 bottom-6 left-2">
-							<div class="font-semibold text-white">Papiii Ecamm</div>
-							<div class="text-xs font-normal text-white">FIF, Telkom University</div>
-						</div>
-						<div class="w-full h-1/2 bg-gradient-to-t from-pink-700 from-10% rounded-2xl absolute bottom-0"></div>
-					</div>
-					<div class="w-[140px] h-[240px] bg-white rounded-2xl relative mx-6">
-						<img class="w-full h-full rounded-2xl object-cover" src="src/about-sayanggg.JPG" alt="">
-						<div class="absolute z-10 bottom-6 left-2">
-							<div class="font-semibold text-white">Bundaa Poaii</div>
-							<div class="text-xs font-normal text-white">FIK, Telkom University</div>
-						</div>
-						<div class="w-full h-1/2 bg-gradient-to-t from-pink-700 from-10% rounded-2xl absolute bottom-0"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- About Us Section End -->
-	
-	<!-- Quiz +Footer Section Start -->
-	<section id="quiz" class="pt-16 pb-24 h-full relative h-screen">
-		<div class="container">
-			<div class="flex flex-wrap">
-				<div class="w-full px-6 mb-6">
-					<div class="w-full mb-6">
-						<h1 class="text-white text-4xl text-center pt-10 judul">Games</h1>
-						<h2 class="text-white text-xs text-center pt-4">Games inii berupaa pertanyaan pertanyaan nantinyaa yg akann dikirimkan ke emaill masingg - masingg (akuu ke sayangg, sayangg ke akuu)</h2>
-						<div class="pt-6">
-							<span class="px-6 text-left text-white block text-xs">Gimanaa perasaan sayangg selamaa satuu tahunn barengg samaa akuu?</span>
-							<span class="px-6 text-left text-white block text-xs">Apaaa sihh hall yg palingg menyenangkann pass barengg samaa akuu?</span>
-							<span class="px-6 text-left text-white block text-xs">Harapann-harapann apaa sih buatt hubungann kitaa kedepannyaa sayangg?</span>
-						</div>
-					</div>
-					<div >
-						<textarea class="w-full h-[218px] px-6 mb-3 bg-white rounded-2xl placeholder:text-sm placeholder:text-left placeholder:top-1" placeholder="Cemangat isinya sayanggcuuuu" type="text-area"></textarea>  
-					</div>
-					<div class="float-right">
-						<button onclick="kirimEmail()" class="px-5 py-2.5 bg-gradient-to-b from-rose-600 to-pink-600 rounded-full text-white text-sm font-semibold">Yuu Kirimm</button>
-					</div>
-				</div>
-			</div>
-			<div class="w-full pt-6 pb-12 bg-gradient-to-b from-rose-600 to-pink-600 absolute bottom-0">
-				<h1 class="text-3xl text-white text-center font-bold">Untukk Sayanngcuu</h1>
-				<a href="https://gifft.me/hm#W3KJPCulQhOCKmPsEkf2" class="text-white text-center pt-6"><span class="block cursor-pointer underline ">klikk disinii yaa Sayanggkuuu</span></a>
-			</div>
-		</div>
-	</section>
-	<!-- Quiz Section End -->
+    <!-- Navbar Section Start -->
+    <header
+      class="bg-transparent top-0 left-0 w-full flex items-center z-10 pt-4 pb-4 fixed backdrop-blur-sm drop-shadow-md"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-6">
+            <img src="src/logo.png" alt="logoo suka suka aii" class="w-1/3" />
+          </div>
+          <div class="flex items-center px-6">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-6"
+            >
+              <span
+                class="w-[24px] h-[2px] my-1 block bg-white rounded-full"
+              ></span>
+              <span
+                class="w-[24px] h-[2px] my-1 block bg-white rounded-full"
+              ></span>
+              <span
+                class="w-[24px] h-[2px] my-1 block bg-white rounded-full"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar Section End -->
 
-	<script src="js/script.js"></script>
-</body>
+    <!-- Hero Section Start kurang muted -->
+    <section id="home" class="h-full">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <!-- The video -->
+          <div class="flex relative overflow-hideen h-full">
+            <video
+              autoplay
+              muted
+              loop
+              id="myVideo"
+              class="object-cover opacity-40 h-screen"
+            >
+              <source src="src/video-bg.mp4" type="video/mp4" />
+            </video>
+            <div class="w-full px-6 mb-6 absolute top-24">
+              <h1 class="text-white text-4xl font-bold block">Camat Datang,</h1>
+              <h1
+                id="change-txt"
+                class="text-white text-4xl font-bold block mb-3"
+              >
+                Sayanggcuuu
+              </h1>
+              <h2 class="text-white text-xs font-normal">
+                Nanti di scroll aja yaaaa sampee bawahhh pelann pelannn ajaa
+                gausaa buruu buruu :D <br />camattt menikmatiiiiii...!!! :D
+              </h2>
+            </div>
+            <div
+              class="absolute bottom-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+              <button
+                class="bg-gradient-to-b from-rose-600 to-pink-600 self-end px-5 h-10 rounded-full animate-bounce"
+                onclick="videoSurprise()"
+              >
+                <span class="text-white text-[13px] font-semibold text-center"
+                  >Nontonn Yuuu</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Gallery Section Start -->
+    <section id="gallery" class="pt-16 pb-12 h-screen">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-6 mb-6">
+            <h1 class="text-white text-4xl text-center pt-10 judul">Gallery</h1>
+            <h2 class="text-white text-xs text-center pt-4">
+              ini kumpulan album foto kitaaa, sebenernya tinggal liat di gdrivee
+              sii tpi klooo di sinii kann lebihh lucuuuuu dan kerenn gaa sii
+              sayanggg wkwkwk
+            </h2>
+          </div>
+        </div>
+
+        <div class="px-6 pt-12 text-white flex justify-between items-center">
+          <span class="font-semibold">Momen Terbaik di 2022</span>
+          <span class="text-xs underline hover:text-pink-500 cursor-pointer"
+            >Lihat Semua</span
+          >
+        </div>
+        <div class="slider full-bleed">
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div>
+                <img
+                  src="src/fav-ultah.JPG"
+                  alt=""
+                  class="w-[144px] h-full rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span class="block">Ulanggg Tahunn Sayanggg</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Rumah Rancaekek</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div>
+                <img
+                  src="src/fav-fotstud.jpg"
+                  alt=""
+                  class="w-[144px] h-full rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span>Foto Studioo Nalaa</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Nala Photo Studio</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div>
+                <img
+                  src="src/fav-masker.jpg"
+                  alt=""
+                  class="w-[144px] h-full rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span>Pake maskerr barengg</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Kos Sayang Dulu</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div>
+                <img
+                  src="src/fav-sutei.jpg"
+                  alt=""
+                  class="w-[144px] h-full rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span>Mamm Sushi di Sushi Tei</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Sushi Tei, TSM</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div class="">
+                <img
+                  src="src/fav-racha.jpg"
+                  alt=""
+                  class="w-[144px] h-[160px] rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span>Jalan - jalan di Trans Studio Mall</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Trans Studio Mall Bandung</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-6 pt-6 text-white flex justify-between items-center">
+          <span class="font-semibold">Momen Terbaik di 2023</span>
+          <span class="text-xs underline hover:text-pink-500 cursor-pointer"
+            >Lihat Semua</span
+          >
+        </div>
+        <div class="slider full-bleed">
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div>
+                <img
+                  src="src/fav-parlor.jpg"
+                  alt=""
+                  class="w-[144px] h-full rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span class="block"
+                  >Jalan seharian ke Fogoo & Thee Parlorr</span
+                >
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Fogo & The Parlor</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div>
+                <img
+                  src="src/fav-iceskate.jpg"
+                  alt=""
+                  class="w-[144px] h-full rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span>Mainn Icee Skatingg di PVJ</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Ice Skate, PVJ</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div>
+                <img
+                  src="src/fav-tsm.jpg"
+                  alt=""
+                  class="w-[144px] h-full rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span>Masukk ke Transs Studioo Bandungg</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Transs Studio Mall</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div>
+                <img
+                  src="src/fav-anniv.jpg"
+                  alt=""
+                  class="w-[144px] h-full rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span>Anniversaryy yg ke-6 Bulann samaaa sayangg</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >All you can eat, PVJ</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slidewrapper">
+            <div
+              class="bg-white w-full h-[160px] rounded-2xl flex relative mx-6"
+            >
+              <div class="">
+                <img
+                  src="src/fav-sambal.jpg"
+                  alt=""
+                  class="w-[144px] h-[160px] rounded-l-2xl object-cover"
+                />
+              </div>
+              <div class="px-2 py-2 font-semibold text-base">
+                <span>Jalan - jalann sebelumm LDR (tukarr kadoo)</span>
+                <div class="flex items-center mt-1">
+                  <div class="inline-block w-[20px] h-[20px] mr-1">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                      <path
+                        class="fill-pink-600"
+                        d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="inline-block text-xs text-slate-600"
+                    >Samball Bakarr, Kartika Sari, Tiramisusuu</span
+                  >
+                </div>
+              </div>
+              <div class="absolute right-6 bottom-2">
+                <a
+                  class="pt-2 text-black text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                  >Yuu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center cursor-pointer mt-12">
+          <a
+            href="https://drive.google.com/drive/folders/1PYe5PAAcZkXwYiIFUAzruesDZPBDHYiW?usp=sharing"
+            class="bg-gradient-to-b from-rose-600 to-pink-600 px-5 h-10 rounded-full flex items-center cursor-pointer animate-bounce"
+            ><span
+              class="text-white text-[13px] font-semibold text-center cursor-pointer"
+              >Lihatt Semuaa Albumm Fotoo Kitaa</span
+            ></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section End -->
+
+    <!-- About Us Section Start -->
+    <section id="about-us" class="pt-16 pb-12 h-screen">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-6 mb-16">
+            <h1 class="text-white text-4xl text-center pt-10 judul">
+              About Us
+            </h1>
+            <div id="slider" class="aspect-video mt-12">
+              <div id="line"></div>
+              <ul id="move">
+                <li><img src="src/about-1.jpg" /></li>
+                <li><img src="src/about-2.jpg" /></li>
+                <li><img src="src/about-3.jpg" /></li>
+                <li><img src="src/about-4.JPG" /></li>
+              </ul>
+              <div id="back"><</div>
+              <div id="forword">></div>
+              <div id="dots"></div>
+            </div>
+
+            <h2 class="text-white text-xs text-left pt-2">
+              di sini bakall nyeritainn tentangg kitaaaa, dann jugaa ada profill
+              kitaa masingg masingg buatt portofolioo webbnyaaa WOWWWWW wkwkkwk
+            </h2>
+            <div class="float-right">
+              <a
+                class="pt-2 text-white text-xs font-semibold underline cursor-pointer hover:text-pink-600"
+                >Lihatt ceritaa lengkapp yuu...</a
+              >
+            </div>
+          </div>
+          <div class="w-full px-6 mb-3 flex justify-strech">
+            <div class="w-[144px] h-[240px] bg-white rounded-2xl relative mx-6">
+              <img
+                class="w-full h-full rounded-2xl object-cover"
+                src="src/about-ecamm.jpg"
+                alt=""
+              />
+              <div class="absolute z-10 bottom-6 left-2">
+                <div class="font-semibold text-white">Papiii Ecamm</div>
+                <div class="text-xs font-normal text-white">
+                  FIF, Telkom University
+                </div>
+              </div>
+              <div
+                class="w-full h-1/2 bg-gradient-to-t from-pink-700 from-10% rounded-2xl absolute bottom-0"
+              ></div>
+            </div>
+            <div class="w-[140px] h-[240px] bg-white rounded-2xl relative mx-6">
+              <img
+                class="w-full h-full rounded-2xl object-cover"
+                src="src/about-sayanggg.JPG"
+                alt=""
+              />
+              <div class="absolute z-10 bottom-6 left-2">
+                <div class="font-semibold text-white">Bundaa Poaii</div>
+                <div class="text-xs font-normal text-white">
+                  FIK, Telkom University
+                </div>
+              </div>
+              <div
+                class="w-full h-1/2 bg-gradient-to-t from-pink-700 from-10% rounded-2xl absolute bottom-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section End -->
+
+    <!-- Quiz +Footer Section Start -->
+    <section id="quiz" class="pt-16 pb-24 h-full relative h-screen">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-6 mb-6">
+            <div class="w-full mb-6">
+              <h1 class="text-white text-4xl text-center pt-10 judul">Games</h1>
+              <h2 class="text-white text-xs text-center pt-4 mb-6">
+                Games inii berupaa pertanyaan pertanyaan nantii jawabannyaa
+                dikirimm ke whatsapp kitaa yaaa sayangg
+			  </h2>
+
+			  <div x-data="{ open: false }" class="flex flex-col items-center justify-center relative overflow-hidden mt-6">
+				<div  @click="open = ! open" class="p-4 bg-pink-600 w-full flex justify-between items-center">
+				  <div class="flex items-center gap-2">
+					  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+					  </svg>
+					  <h4 class="font-medium text-sm text-white">Pertanyaan Pertamaa</h4>
+				  </div>
+				  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+				  </svg>
+				</div>
+				<div x-show="open" @click.outside="open = false"  x-transition:enter="transition ease-out duration-300"
+					  x-transition:enter-start="opacity-0 translate-y-0"
+					  x-transition:enter-end="opacity-100 translate-y-0"
+					  x-transition:leave="transition ease-in duration-300"
+					  x-transition:leave-start="opacity-100 translate-y-10"
+					  x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-white p-4 ">
+				  <h4 class="text-sm text-slate-600">1. Gimanaaa perasaann sayangg pass nontonn videoo videoo darii akuu?</h4>
+				</div>
+			  </div>
+			  
+			  <div x-data="{ open: false }" class="flex flex-col items-center justify-center relative overflow-hidden mt-6">
+				<div  @click="open = ! open" class="p-4 bg-pink-600 w-full flex justify-between items-center">
+				  <div class="flex items-center gap-2">
+					  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+					  </svg>
+					  <h4 class="font-medium text-sm text-white">Pertanyaan Keduaa</h4>
+				  </div>
+				  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+				  </svg>
+				</div>
+				<div x-show="open" @click.outside="open = false"  x-transition:enter="transition ease-out duration-300"
+					  x-transition:enter-start="opacity-0 translate-y-0"
+					  x-transition:enter-end="opacity-100 translate-y-0"
+					  x-transition:leave="transition ease-in duration-300"
+					  x-transition:leave-start="opacity-100 translate-y-10"
+					  x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-white p-4 ">
+				  <h4 class="text-sm text-slate-600">2. Gimanaa Revieww Hadiahhnyaa? (Lukisann akuuu)</h4>
+				</div>
+			  </div>
+
+			  <div x-data="{ open: false }" class="flex flex-col items-center justify-center relative overflow-hidden mt-6">
+				<div  @click="open = ! open" class="p-4 bg-pink-600 w-full flex justify-between items-center">
+				  <div class="flex items-center gap-2">
+					  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+					  </svg>
+					  <h4 class="font-medium text-sm text-white">Pertanyaan Ketigaa</h4>
+				  </div>
+				  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+				  </svg>
+				</div>
+				<div x-show="open" @click.outside="open = false"  x-transition:enter="transition ease-out duration-300"
+					  x-transition:enter-start="opacity-0 translate-y-0"
+					  x-transition:enter-end="opacity-100 translate-y-0"
+					  x-transition:leave="transition ease-in duration-300"
+					  x-transition:leave-start="opacity-100 translate-y-10"
+					  x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-white p-4 flex justify-center">
+				  <a class="bg-blue-500 p-2 text-sm text-white font-bold rounded mt-4" href="">Buka Hadiahhnyaaa</a>
+				</div>
+			  </div>
+
+			  <div x-data="{ open: false }" class="flex flex-col items-center justify-center relative overflow-hidden mt-6">
+				<div  @click="open = ! open" class="p-4 bg-pink-600 w-full flex justify-between items-center">
+				  <div class="flex items-center gap-2">
+					  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+					  </svg>
+					  <h4 class="font-medium text-sm text-white">Pertanyaan Keempatt</h4>
+				  </div>
+				  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+				  </svg>
+				</div>
+				<div x-show="open" @click.outside="open = false"  x-transition:enter="transition ease-out duration-300"
+					  x-transition:enter-start="opacity-0 translate-y-0"
+					  x-transition:enter-end="opacity-100 translate-y-0"
+					  x-transition:leave="transition ease-in duration-300"
+					  x-transition:leave-start="opacity-100 translate-y-10"
+					  x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-white p-4 flex justify-center">
+				  <a class="bg-blue-500 p-2 text-sm text-white font-bold rounded mt-4" href="">Buka Hadiahhnyaaa</a>
+				</div>
+			  </div>
+
+			  <div x-data="{ open: false }" class="flex flex-col items-center justify-center relative overflow-hidden mt-6">
+				<div  @click="open = ! open" class="p-4 bg-pink-600 w-full flex justify-between items-center">
+				  <div class="flex items-center gap-2">
+					  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+					  </svg>
+					  <h4 class="font-medium text-sm text-white">Pertanyaan Kelimaa</h4>
+				  </div>
+				  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+				  </svg>
+				</div>
+				<div x-show="open" @click.outside="open = false"  x-transition:enter="transition ease-out duration-300"
+					  x-transition:enter-start="opacity-0 translate-y-0"
+					  x-transition:enter-end="opacity-100 translate-y-0"
+					  x-transition:leave="transition ease-in duration-300"
+					  x-transition:leave-start="opacity-100 translate-y-10"
+					  x-transition:leave-end="opacity-0 translate-y-0" class="w-full bg-white p-4 ">
+				  <h4 class="text-sm text-slate-600">5. Gimanaa perasaann sayanggkuu dengann hubungann kitaa saat inii?, Apaa ajaa yg menurutt sayangg haruss diperbaikii?, dann Apaa harapann sayangg untukk hubungann kitaa kedepannyaaa?</h4>
+				</div>
+			  </div>
+			  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quiz Section End -->
+
+    <script src="js/script.js"></script>
+	<script src="//unpkg.com/alpinejs" defer></script>
+  </body>
 </html>
